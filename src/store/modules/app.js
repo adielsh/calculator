@@ -15,8 +15,8 @@ const app = {
       } else {
         Cookies.set('sidebarStatus', 0)
       }
-      state.sidebar.opened = !state.sidebar.opened
-      state.sidebar.withoutAnimation = false
+      state.sidebar.opened = !state.sidebar.opened;
+      state.sidebar.withoutAnimation = false;
     },
     CLOSE_SIDEBAR: (state, withoutAnimation) => {
       Cookies.set('sidebarStatus', 1)
@@ -40,6 +40,8 @@ const app = {
     ToggleDevice({ commit }, device) {
       commit('TOGGLE_DEVICE', device)
     }
+  },
+  getters:{
   }
 }
 
